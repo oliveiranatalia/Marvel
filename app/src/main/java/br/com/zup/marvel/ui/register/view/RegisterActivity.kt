@@ -32,6 +32,7 @@ class RegisterActivity : AppCompatActivity() {
     }
     private fun getData():User{
         return User(
+            binding.etNomeUsuario.text.toString(),
             binding.etEmailRegistro.text.toString(),
             binding.etSenhaRegistro.text.toString()
         )
