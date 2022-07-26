@@ -3,9 +3,7 @@ package br.com.zup.marvel.ui.register.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.zup.marvel.CREATE_ERROR
-import br.com.zup.marvel.ERROR
-import br.com.zup.marvel.REQUIRED
+import br.com.zup.marvel.*
 import br.com.zup.marvel.domain.model.User
 import br.com.zup.marvel.domain.repository.AuthenticatonRepository
 
@@ -20,9 +18,10 @@ class RegisterViewModel:ViewModel() {
 
     fun validate(user:User){
         when{
-            user.name.isEmpty() -> _error.value = REQUIRED
-            user.email.isEmpty() -> _error.value = REQUIRED
-            user.password.isEmpty() -> _error.value = REQUIRED
+            user.name.isEmpty() -> _error.value = NAME_ERROR
+            user.email.isEmpty() -> _error.value = EMAIL_ERROR
+            user.password.isEmpty() -> _error.value = PASS_ERROR
+            user.name.length < 3 -> NAME_ERROR
             else -> register(user)
         }
     }

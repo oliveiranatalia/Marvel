@@ -1,12 +1,13 @@
 package br.com.zup.marvel
 
-const val REQUIRED = "Insira e-mail e senha!"
-const val ERROR = "Não foi possível logar. Tente novamente."
+const val EMAIL_ERROR = "Insira um e-mail válido!"
+const val NAME_ERROR = "O nome de usuário deve conter mais que 3 caracteres!"
+const val PASS_ERROR = "Insira uma senha válida"
+const val LOGIN_ERROR = "Não foi possível logar. Tente novamente."
+const val CREATE_ERROR = "Não foi possível criar usuário. Tente novamente"
 const val USER = "user"
 const val HI = "Olá, "
 const val MESSAGE = " esses são alguns dos personagens da Marvel."
-const val CREATE_ERROR = "Não foi possível criar usuário. Tente novamente"
-
 const val MARVEL_KEY = "MARVEL"
 const val GAMORRA_NOME = "Gamorra"
 const val GAMORRA_DESCRICAO =
