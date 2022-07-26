@@ -1,6 +1,5 @@
 package br.com.zup.marvel.ui.home.view
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +12,6 @@ import br.com.zup.marvel.*
 import br.com.zup.marvel.databinding.ActivityHomeBinding
 import br.com.zup.marvel.ui.detalhe.DetalheActivity
 import br.com.zup.marvel.data.model.Marvel
-import br.com.zup.marvel.domain.repository.AuthenticatonRepository
 import br.com.zup.marvel.ui.home.viewmodel.HomeViewModel
 import br.com.zup.marvel.ui.login.view.LoginActivity
 
