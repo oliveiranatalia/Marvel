@@ -36,8 +36,8 @@ class HomeActivity : AppCompatActivity() {
 
     private fun showUserData(){
         val user = viewModel.getUserName()
-        val text = MESSAGE
-        (HI + user + text).also { binding.textView.text = it }
+        val text = getString(R.string.texto_home)
+        binding.textView.text = "$user $text"
     }
     private fun setUpRecyclerView() {
         binding.rvHerois.adapter = adapter
@@ -69,7 +69,7 @@ class HomeActivity : AppCompatActivity() {
                 goToLogin()
                 true
             }
-            else -> false
+            else -> super.onOptionsItemSelected(item)
         }
     }
     private fun goToLogin(){
