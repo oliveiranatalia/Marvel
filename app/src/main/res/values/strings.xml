@@ -17,4 +17,5 @@
     <string name="criar_conta">Crie sua conta agora</string>
     <string name="hint_nome">Nome</string>
     <string name="registrar">registrar conta</string>
+    <string name="sair">Sair</string>
 </resources>
