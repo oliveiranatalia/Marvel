@@ -30,7 +30,7 @@ class RegisterViewModel:ViewModel() {
         try {
             repository.register(user.email, user.password
             ).addOnSuccessListener { repository.updateUser(user.name)?.addOnSuccessListener { _register.value = user }
-            }.addOnFailureListener{_error.value = CREATE_ERROR + it.message}
+            }.addOnFailureListener{_error.value = CREATE_ERROR}
         }catch(e:Exception){
             _error.value = e.message
         }
