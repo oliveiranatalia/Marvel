@@ -22,6 +22,7 @@ class RegisterViewModel:ViewModel() {
             user.email.isEmpty() -> _error.value = EMAIL_ERROR
             user.password.isEmpty() -> _error.value = PASS_ERROR
             user.name.length < 3 -> NAME_ERROR
+            user.password.length < 8 -> PASS_ERROR
             else -> register(user)
         }
     }

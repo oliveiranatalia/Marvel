@@ -19,7 +19,6 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private val adapter: MarvelAdapter by lazy {
         MarvelAdapter(arrayListOf(), this::goToDetail)}
-
     private val viewModel: HomeViewModel by lazy {
         ViewModelProvider(this)[HomeViewModel::class.java]
     }
