@@ -52,9 +52,6 @@ dependencies {
     //Firebase Authentication
     implementation 'com.google.firebase:firebase-auth-ktx'
 
-    //Firebase Realtime Database
-    implementation 'com.google.firebase:firebase-database-ktx'
-
     //network connection
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.okhttp3:logging-interceptor:4.2.1"
