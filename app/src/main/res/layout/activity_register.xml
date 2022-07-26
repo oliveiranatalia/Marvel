@@ -14,7 +14,7 @@
         android:layout_marginTop="@dimen/margin_86"
         android:layout_marginHorizontal="@dimen/margin_16"
         android:hint="@string/hint_nome"
-        android:inputType="text"
+        android:inputType="textCapWords"
         android:textSize="@dimen/font_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
