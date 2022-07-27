@@ -41,7 +41,6 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_senha"
         android:inputType="textPassword"
-        android:maxLength="8"
         android:textSize="@dimen/font_size_14"
         android:layout_marginTop="@dimen/margin_16"
         android:layout_marginHorizontal="@dimen/margin_16"

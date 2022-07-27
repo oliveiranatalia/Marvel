@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Marvel">
+        android:theme="@style/Theme.Marvel"
+        android:usesCleartextTraffic="true">
         <activity
             android:name="br.com.zup.marvel.ui.register.view.RegisterActivity"
             android:exported="false" />

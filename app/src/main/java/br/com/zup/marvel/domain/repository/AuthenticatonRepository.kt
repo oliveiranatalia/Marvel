@@ -22,6 +22,7 @@ class AuthenticatonRepository {
         return auth.currentUser?.updateProfile(profile)
     }
     fun getUserName(): String = auth.currentUser?.displayName.toString()
+
     fun logout() {
         auth.signOut()
     }
